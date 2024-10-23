@@ -1,50 +1,72 @@
-# What inside? <br/> <sub> https://28-jotion-clone.vercel.app/ </sub>
+# Fullstack Notion Clone: Next.js 13, React, Convex, Tailwind | Full Course 2023
 
-![work in progress](https://i.imgur.com/cW9GVNg.png)
+![Copy of Copy of Copy of Fullstack Twitter Clone (6)](https://github.com/AntonioErdeljac/notion-clone-tutorial/assets/23248726/66bcfca3-93bf-4aa4-950d-f98c020e1156)
 
-<br/>
-<br/>
-<br/>
 
-# Clone repository
+This is a repository for Fullstack Notion Clone: Next.js 13, React, Convex, Tailwind | Full Course 2023
 
-## Step 1.1 - clone repository (variant 1)
+[VIDEO TUTORIAL](https://www.youtube.com/watch?v=ZbX4Ok9YX94)
 
-![alt text](https://i.imgur.com/9KSgjaN.png)
+Key Features:
 
-## or Step 1.1 - clone repository (variant 2)
+- Real-time database  🔗 
+- Notion-style editor 📝 
+- Light and Dark mode 🌓
+- Infinite children documents 🌲
+- Trash can & soft delete 🗑️
+- Authentication 🔐 
+- File upload
+- File deletion
+- File replacement
+- Icons for each document (changes in real-time) 🌠
+- Expandable sidebar ➡️🔀⬅️
+- Full mobile responsiveness 📱
+- Publish your note to the web 🌐
+- Fully collapsable sidebar ↕️
+- Landing page 🛬
+- Cover image of each document 🖼️
+- Recover deleted files 🔄📄
+
+### Prerequisites
+
+**Node version 18.x.x**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/AntonioErdeljac/notion-clone-tutorial.git
+```
+
+### Install packages
+
+```shell
+npm i
+```
+
+### Setup .env file
+
+
+```js
+# Deployment used by `npx convex dev`
+CONVEX_DEPLOYMENT=
+NEXT_PUBLIC_CONVEX_URL=
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+EDGE_STORE_ACCESS_KEY=
+EDGE_STORE_SECRET_KEY=
+```
+
+### Setup Convex
+
+```shell
+npx convex dev
 
 ```
-git clone https://github.com/nicitaacom/28_notion-clone
+
+### Start the app
+
+```shell
+npm run dev
 ```
-
-## Step 1.2 - install deps
-
-```
-pnpm i
-```
-
-## Step 1.3 - run project
-
-```
-pnpm dev
-```
-
-In new terminal
-
-```
-pnpx convex dev
-```
-
-<br/>
-<br/>
-<br/>
-
-## Step 2 - setup .env
-
-### 2.1 - convex - https://youtu.be/0OaDyjB9Ib8?t=4679
-
-### 2.2 - clerk - https://youtu.be/0OaDyjB9Ib8?t=4916
-
-### 2.3 - edge store - https://youtu.be/0OaDyjB9Ib8?t=22786
-

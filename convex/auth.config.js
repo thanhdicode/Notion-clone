@@ -1,8 +1,8 @@
 export default {
   providers: [
     {
-      domain: "https://smart-seasnail-3.clerk.accounts.dev",
+      domain: "https://actual-glider-21.clerk.accounts.dev",
       applicationID: "convex",
-    },
-  ],
-};
+    }
+  ]
+}

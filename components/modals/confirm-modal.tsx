@@ -1,26 +1,36 @@
-'use client'	
+"use client";
 
-import {AlertDialog,AlertDialogAction,AlertDialogCancel
-  ,AlertDialogContent,AlertDialogDescription
-  ,AlertDialogFooter,AlertDialogHeader,
-AlertDialogTitle,AlertDialogTrigger} from '@/components/ui/alert-dialog'
-import React from "react"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger
+} from "@/components/ui/alert-dialog";
 
 interface ConfirmModalProps {
-  children:React.ReactNode
-  onConfirm:() => void
-}
+  children: React.ReactNode;
+  onConfirm: () => void;
+};
 
-export function ConfirmModal ({children,onConfirm}:ConfirmModalProps) {
+export const ConfirmModal = ({
+  children,
+  onConfirm
+}: ConfirmModalProps) => {
+  const handleConfirm = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    e.stopPropagation();
+    onConfirm();
+  };
 
-  const handleConfirm = (e:React.MouseEvent<HTMLButtonElement,MouseEvent>) => {
-    e.stopPropagation()
-    onConfirm()
-  }
-  
-return (
+  return (
     <AlertDialog>
-      <AlertDialogTrigger onClick={e => e.stopPropagation()} asChild>
+      <AlertDialogTrigger onClick={(e) => e.stopPropagation()} asChild>
         {children}
       </AlertDialogTrigger>
       <AlertDialogContent>
@@ -42,5 +52,5 @@ return (
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
-)
+  )
 }

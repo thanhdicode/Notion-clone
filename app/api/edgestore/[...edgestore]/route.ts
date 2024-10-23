@@ -12,7 +12,7 @@ const edgeStoreRouter = es.router({
       return true;
     }),
 });
-
+ 
 const handler = createEdgeStoreNextHandler({
   router: edgeStoreRouter,
 });
